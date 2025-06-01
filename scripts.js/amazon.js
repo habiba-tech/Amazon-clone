@@ -71,6 +71,8 @@ function updateCartquatity() {
         .innerHTML = cartQuantity;
 }
 
+updateCartquatity();
+
 document.querySelectorAll('.js-add-to-cart')
   .forEach((button) => {
     button.addEventListener('click', () => {
