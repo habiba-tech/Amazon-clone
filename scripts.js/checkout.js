@@ -104,10 +104,9 @@ function deliveryOptionsHTML(matchingProduct,cartItem){
     );
 
     const priceString = deliveryOption.priceCents
-    === 0 
-      ? 'FREE'
+    === 0  ? 'FREE'
       : `$${formatCurrency(deliveryOption.
-      priceCents)} -`;
+      priceCents)} - Shipping`;
 
       const isChecked = deliveryOption.id ===
       cartItem.deliveryOptionId;  
@@ -123,7 +122,7 @@ function deliveryOptionsHTML(matchingProduct,cartItem){
             ${dateString}
           </div>
           <div class="delivery-option-price">
-          
+
             ${priceString}
           </div>
         </div>
